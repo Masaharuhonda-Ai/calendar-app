@@ -351,7 +351,7 @@ async function checkPw() {
   const val = document.getElementById('pwInput').value;
   const h = await hashStr(val);
   if (h === PASS_HASH) {
-    sessionStorage.setItem('calAuth', '1');
+    localStorage.setItem('calAuth', '1');
     document.getElementById('lockScreen').style.display = 'none';
   } else {
     document.getElementById('pwError').textContent = 'パスワードが違います';
@@ -359,7 +359,7 @@ async function checkPw() {
     document.getElementById('pwInput').focus();
   }
 }
-if (sessionStorage.getItem('calAuth') === '1') {
+if (localStorage.getItem('calAuth') === '1') {
   document.getElementById('lockScreen').style.display = 'none';
 }
 
