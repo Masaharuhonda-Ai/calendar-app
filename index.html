@@ -103,6 +103,7 @@ body{font-family:'Hiragino Sans','Meiryo',sans-serif;background:#fff;color:#222;
 .epill.c2{background:#F5C4B3;color:#712B13}
 .epill.c3{background:#D3D1C7;color:#444}
 .epill.c4{background:#C0DD97;color:#27500A}
+.epill.c5{background:#F5D0F0;color:#6B0F6B}
 .more{font-size:12px;color:#aaa;padding:1px 4px}
 
 /* ── モーダル ── */
@@ -282,6 +283,7 @@ body{font-family:'Hiragino Sans','Meiryo',sans-serif;background:#fff;color:#222;
         <option value="2">医療・健診</option>
         <option value="3">その他</option>
         <option value="4">インポート</option>
+        <option value="5">家族</option>
       </select>
     </div>
     <div class="ev-list" id="evList"></div>
@@ -364,9 +366,9 @@ if (localStorage.getItem('calAuth') === '1') {
 }
 
 /* ── アプリデータ ── */
-const CATS = ['仕事', '個人', '医療・健診', 'その他', 'インポート'];
-const DOTCOLS = ['#378ADD', '#1D9E75', '#D85A30', '#888780', '#639922'];
-const PILLCLS = ['c0', 'c1', 'c2', 'c3', 'c4'];
+const CATS = ['仕事', '個人', '医療・健診', 'その他', 'インポート', '家族'];
+const DOTCOLS = ['#378ADD', '#1D9E75', '#D85A30', '#888780', '#639922', '#B44DB4'];
+const PILLCLS = ['c0', 'c1', 'c2', 'c3', 'c4', 'c5'];
 const WD = ['日', '月', '火', '水', '木', '金', '土'];
 
 let cur = new Date();
