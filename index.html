@@ -68,6 +68,18 @@ body{font-family:'Hiragino Sans','Meiryo',sans-serif;background:#fff;color:#222;
   color:#333;font-family:inherit;transition:background .12s
 }
 .nav-btn:hover{background:#f0f0f0}
+.launch-bar{
+  display:flex;flex-wrap:wrap;gap:5px;
+  margin-bottom:0.6rem;flex-shrink:0
+}
+.launch-btn{
+  padding:5px 12px;border-radius:6px;border:none;
+  cursor:pointer;font-size:12px;font-family:inherit;
+  font-weight:500;color:#fff;text-decoration:none;
+  display:inline-flex;align-items:center;gap:4px;
+  white-space:nowrap;transition:opacity .15s
+}
+.launch-btn:hover{opacity:0.82}
 .cal-wrap{flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column}
 .cal-grid{
   width:100%;border-collapse:collapse;
@@ -257,6 +269,13 @@ body{font-family:'Hiragino Sans','Meiryo',sans-serif;background:#fff;color:#222;
       </div>
       <span class="cal-title" id="monthLabel"></span>
       <button class="nav-btn" onclick="openAdd(today())">＋ 追加</button>
+    </div>
+    <div class="launch-bar">
+      <a class="launch-btn" style="background:#1a73e8" href="https://shinseikai.bycloud.jp/gsession/common/cmn001.do" target="_blank">🌐 GroupSession</a>
+      <a class="launch-btn" style="background:#0f9d58" href="https://shinseikai.bycloud.jp/gsession/common/cmn001.do" target="_blank">📚 学徒サイト</a>
+      <a class="launch-btn" style="background:#ff9900" href="https://www.amazon.co.jp/" target="_blank">🛒 Amazon</a>
+      <a class="launch-btn" style="background:#e84949" href="https://www.furusato-tax.jp/login" target="_blank">🎁 ふるさとチョイス</a>
+      <a class="launch-btn" style="background:#6d4c9e" href="https://id.obc.jp/8cnrb7eeina2/" target="_blank">📊 奉行クラウド</a>
     </div>
     <div class="cal-wrap">
       <table class="cal-grid" style="height:100%">
